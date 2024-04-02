@@ -1,5 +1,3 @@
-// App.jsx
-
 import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
@@ -9,6 +7,7 @@ import Footer from './components/Footer';
 import ContactPage from './pages/contact';
 import HomePage from './pages/Home';
 import PortfolioPage from './pages/portfolio';
+import AboutMePage from './pages/Home';
 
 function App() {
   return (
@@ -17,6 +16,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/Home" element={<AboutMePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} /> 
         </Routes>

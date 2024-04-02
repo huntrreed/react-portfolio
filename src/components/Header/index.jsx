@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <Menu mode="horizontal" theme="dark" className="menu">
         <Menu.Item key="about">
-          <Link to="/about">About Me</Link>
+          <Link to="/Home">About Me</Link>
         </Menu.Item>
         <Menu.Item key="work">
           <Link to="/portfolio">Portfolio</Link> 
@@ -20,7 +20,7 @@ const Header = () => {
           <Link to="/contact">Contact Me</Link>
         </Menu.Item>
         <Menu.Item key="resume">
-          <Link to="/resume">Resume</Link>
+          <Link to="https://www.linkedin.com/in/hunter-reed-8282b7127/">Resume</Link>
         </Menu.Item>
       </Menu>
     </header>

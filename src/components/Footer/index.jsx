@@ -11,11 +11,6 @@ const Footer = () => {
 
   return (
     <AntFooter className="footer">
-      {location.pathname !== '/' && (
-        <Button type="primary" onClick={() => navigate(-1)}>
-          &larr; Go Back
-        </Button>
-      )}
       <div className="social-icons">
         <a href="https://github.com/huntrreed"><GithubOutlined /></a>
         <a href="https://www.linkedin.com/in/hunter-reed-8282b7127/"><LinkedinOutlined /></a>
