@@ -5,8 +5,9 @@ import { Menu } from 'antd';
 const Header = () => {
   return (
     <header className="header">
-      <div className="title">
-        <Link to="/">Hunter Reed</Link>
+      <div>
+        <div className="title">Hunter Reed</div>
+        <div className="subtitle">Web Development Portfolio</div>
       </div>
       <Menu mode="horizontal" theme="dark" className="menu">
         <Menu.Item key="about">
