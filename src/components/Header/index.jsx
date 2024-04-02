@@ -13,7 +13,7 @@ const Header = () => {
           <Link to="/about">About Me</Link>
         </Menu.Item>
         <Menu.Item key="work">
-          <Link to="/work">Work</Link>
+          <Link to="/portfolio">Portfolio</Link> 
         </Menu.Item>
         <Menu.Item key="contact">
           <Link to="/contact">Contact Me</Link>
