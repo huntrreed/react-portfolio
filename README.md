@@ -10,9 +10,6 @@ This application serves as a portfolio for all of my web development projects co
  ## Table of Contents
  - [Installation](#installation)
  - [Usage](#usage)
- - [Contributing](#contributing)
- - [Tests](#tests)
- - [License](#license)
  - [Questions](#questions)
 
 ## Installation
@@ -21,20 +18,6 @@ This project doesn't need any installation, it can just be viewed through the li
 ## Usage
 It is used through the deployed application on Netlify
 
-## Contributing Guidelines
-
-
-## Demo
-Below is a demonstration of the application.
-Click [here](n) for a demonstration of the application.
-
-## Tests
-
-
-
-## License
-This project is not licensed.
-
 ## Questions
 
 Contact me with any other questions regarding this project via the email listed below
@@ -42,4 +25,4 @@ GitHub: [huntrreed](https://github.com/huntrreed)
 Email: huntrreed@gmail.com
 
 ### Deployed Link
-[Deployed Application Page](na)
+[Deployed Application Page](https://main--marvelous-boba-e499d0.netlify.app/)
