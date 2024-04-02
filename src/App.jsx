@@ -1,20 +1,24 @@
+// App.jsx
+
+import React from 'react';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
-import { Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-
-
-// Construct request middleware that will attach the JWT token to every request as an `authorization` header
-
+import ContactPage from './pages/contact';
+import HomePage from './pages/Home';
 
 function App() {
   return (
     <>
       <Header />
       <div className="container">
-        {/* Content to go here */}
-        <Outlet /> 
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+        <Outlet />
       </div>
       <Footer />
     </>

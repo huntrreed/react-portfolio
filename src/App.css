@@ -64,6 +64,57 @@
   color: var(--teal); 
 }
 
+/*contact page*/
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  background: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ant design contact form */
+.ant-btn-primary {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: var(--teal);
+  border-color: var(--teal);
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+  border-color: var(--teal);
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input:hover,
+.ant-input-affix-wrapper:hover {
+  border-color: var(--orange);
+  box-shadow: none;
+}
+
+.ant-form-item-label label {
+  color: var(--green);
+}
+
+
+
 /*leftover/*
 
 h1 {
