@@ -3,7 +3,7 @@ import { Card } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import HappyGardenerImage from '../assets/cardimages/HappyGardener.jpg';
 import FureverFriendsImage from '../assets/cardimages/FureverFriends.jpg';
-import WeatherDashboardImage from '../assets/cardimages/WeatherDash.jpg';
+import WeatherDashboardImage from '../assets/cardimages/weatherdash.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
 import PasswordGeneratorImage from '../assets/cardimages/PasswordGenerator.jpg';
 import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
