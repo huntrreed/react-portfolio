@@ -6,7 +6,7 @@ import FureverFriendsImage from '../assets/cardimages/FureverFriends.jpg';
 import WeatherDashboardImage from '../assets/cardimages/weatherdash.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
 import PasswordGeneratorImage from '../assets/cardimages/PasswordGenerator.jpg';
-import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
+import TaskMasterImage from '../assets/cardimages/TaskMasterImage.jpg';
 
 
 const projects = [
@@ -25,6 +25,13 @@ const projects = [
     githubLink: 'https://github.com/davisjeff500/FurEver-Friends',
   },
   {
+    title: 'TaskMaster',
+    subtitle: 'MERN application',
+    imageUrl: TaskMasterImage,
+    projectLink: 'https://task-master-ahzg.onrender.com',
+    githubLink: 'https://github.com/33649EK/Task-Master',
+  },
+  {
     title: 'Weather Dashboard',
     subtitle: 'Server-Side APIs',
     imageUrl: WeatherDashboardImage,
@@ -37,13 +44,6 @@ const projects = [
     imageUrl: WorkdaySchedulerImage,
     projectLink: 'https://huntrreed.github.io/Work-Day-Scheduler/',
     githubLink: 'https://github.com/huntrreed/Work-Day-Scheduler',
-  },
-  {
-    title: 'Code Quiz',
-    subtitle: 'Web APIs',
-    imageUrl: CodeQuizImage,
-    projectLink: 'https://huntrreed.github.io/Code-Quiz/',
-    githubLink: 'https://github.com/huntrreed/Code-Quiz',
   },
   {
     title: 'Password Generator',
