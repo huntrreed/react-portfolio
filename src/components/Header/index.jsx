@@ -20,7 +20,7 @@ const Header = () => {
           <Link to="/contact">Contact Me</Link>
         </Menu.Item>
         <Menu.Item key="resume">
-          <Link to="https://www.linkedin.com/in/hunter-reed-8282b7127/">Resume</Link>
+          <Link to="/resume">Resume</Link>
         </Menu.Item>
       </Menu>
     </header>
