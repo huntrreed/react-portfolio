@@ -133,6 +133,18 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 1200px) {
+  .project-card {
+    width: calc(50% - 16px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 16px); /* 1 card per row */
+  }
+}
+
 .image-container {
   position: relative;
   width: 100%;
@@ -163,7 +175,6 @@
   background: rgba(0, 63, 34, 0.4);
     color: white;
   padding: 20px;
-  transition: background 0.3s ease;
   z-index: 2;
   text-align: center; 
 }
@@ -184,6 +195,11 @@
   font-size: 34px;
   color: white; 
   margin-bottom: 2em; 
+  transition: color 0.1s ease;
+}
+
+.github-icon:hover {
+  color: #517ee0; /* Light blue color for hover state */
 }
 
 .project-subtitle {
@@ -192,6 +208,24 @@
   color: white; 
   position: absolute;
   bottom: 20px; 
+}
+
+@media (max-width: 1200px) {
+  .project-title {
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.6rem; 
+  }
+  .github-icon {
+    font-size: 24px; 
+  }
+  .project-subtitle {
+    font-size: 1rem; 
+  }
 }
 
 .image-container:hover .overlay {
