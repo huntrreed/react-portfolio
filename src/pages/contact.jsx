@@ -1,10 +1,39 @@
 import React from 'react';
-import { Form, Input, Button } from 'antd';
+import { Form, Input, Button, notification } from 'antd';
 
 const ContactPage = () => {
-  const onFinish = (values) => {
-    console.log('Received values of form:', values);
-    // do i need to handle form submission? do it here
+  const onFinish = async (values) => {
+    const form = new FormData();
+    for (const [key, value] of Object.entries(values)) {
+      form.append(key, value);
+    }
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xpzvkwpz', {
+        method: 'POST',
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        notification.success({
+          message: 'Message Sent',
+          description: 'Your message has been sent successfully!',
+        });
+      } else {
+        notification.error({
+          message: 'Message Not Sent',
+          description: 'There was an issue sending your message.',
+        });
+      }
+    } catch (error) {
+      notification.error({
+        message: 'Network Error',
+        description: 'Unable to send message at this time.',
+      });
+    }
   };
 
   return (
