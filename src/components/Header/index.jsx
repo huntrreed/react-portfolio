@@ -1,29 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
+import '../../assets/css/Header.css';
 
 const Header = () => {
   return (
-    <header className="header">
-      <div>
-        <div className="title">Hunter Reed</div>
-        <div className="subtitle">Web Development Portfolio</div>
-      </div>
-      <Menu mode="horizontal" theme="dark" className="menu">
-        <Menu.Item key="about">
-          <Link to="/Home">About Me</Link>
-        </Menu.Item>
-        <Menu.Item key="work">
-          <Link to="/portfolio">Portfolio</Link> 
-        </Menu.Item>
-        <Menu.Item key="contact">
-          <Link to="/contact">Contact Me</Link>
-        </Menu.Item>
-        <Menu.Item key="resume">
-          <Link to="/resume">Resume</Link>
-        </Menu.Item>
-      </Menu>
-    </header>
+    <nav id="nav-wrap">
+      <ul id="nav" className="nav">
+        <li className="current">
+          <Link className="smoothscroll" to="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="smoothscroll" to="/about">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="smoothscroll" to="/resume">
+            Resume
+          </Link>
+        </li>
+        <li>
+          <Link className="smoothscroll" to="/portfolio">
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link className="smoothscroll" to="/testimonials">
+            Testimonials
+          </Link>
+        </li>
+        <li>
+          <Link className="smoothscroll" to="/contact">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

@@ -1,31 +1,26 @@
+// src/App.js
 import React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import ContactPage from './pages/contact';
-import HomePage from './pages/Home';
-import PortfolioPage from './pages/portfolio';
-import AboutMePage from './pages/Home';
-import ResumePage from './pages/resume';
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/Home" element={<AboutMePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} /> 
-          <Route path="/resume" element={<ResumePage />} /> 
-        </Routes>
-        <Outlet />
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/resume" component={Resume} />
+        </Switch>
       </div>
-      <Footer />
-    </>
+    </Router>
   );
 }
 

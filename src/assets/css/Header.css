@@ -1,0 +1,26 @@
+/* src/components/Header.css */
+#nav-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensure it stays at the top */
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .nav li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  

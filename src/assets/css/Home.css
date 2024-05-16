@@ -1,0 +1,42 @@
+/* src/pages/Home.css */
+.home {
+    text-align: center;
+    color: white;
+    background: url('../image-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px; /* Ensure this matches the header height */
+  }
+  
+  .header-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .header-content h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .header-content p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .social-links {
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
