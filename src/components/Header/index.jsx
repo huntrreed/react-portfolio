@@ -27,11 +27,6 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link className="smoothscroll" to="/testimonials">
-            Testimonials
-          </Link>
-        </li>
-        <li>
           <Link className="smoothscroll" to="/contact">
             Contact
           </Link>

@@ -1,13 +1,10 @@
+// src/pages/Home.js
 import React from 'react';
 import '../assets/css/Home.css';
-import SiderImage from '../assets/me.jpg';
-
-import Header from '../components/Header';
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
       <div className="header-content">
         <h1>I'm Hunter Reed.</h1>
         <p>I am a new full stack web developer.</p>
