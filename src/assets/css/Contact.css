@@ -1,0 +1,73 @@
+/* src/pages/Contact.css */
+:root {
+    --white:#dcdfdd;
+    --green: #003f22;
+    --teal: #00a69c;
+    --orange: #b55f08;
+    --red: #8b1602;
+    --darkestred: #63250e;
+    font-family: "kanit";
+  
+  }
+
+.contact-page {
+    text-align: center;
+    color: white;
+    background: url('../image-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px; /* Ensure this matches the header height */
+  }
+  
+  .form-container {
+    background: #d9ddd6;    ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-form {
+    background: #70695e;
+    width: 100%;
+  }
+  
+  .contact-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .contact-form .ant-form-item-label > label {
+    color: #ffdfb6
+    ;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .contact-form .ant-input,
+  .contact-form .ant-input-textarea {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: white;
+  }
+  
+  .contact-form .ant-btn-primary {
+    background-color: var(--orange);
+    color: white;
+    font-size: 22px;
+    height: 50px;
+    border-color: var(--orange);
+  }
+  
+  .contact-form .ant-btn-primary:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+  }
