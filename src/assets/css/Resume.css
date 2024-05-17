@@ -1,0 +1,39 @@
+/* src/pages/Resume.css */
+.resume-page {
+    text-align: center;
+    color: white;
+    background: url('../image-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px; /* Ensure this matches the header height */
+  }
+  
+  .resume-content {
+    background: #b55f08;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .resume-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .resume-iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  
