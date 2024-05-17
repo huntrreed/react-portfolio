@@ -1,6 +1,10 @@
+// src/pages/Portfolio.js
 import React from 'react';
 import { Card } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
+import '../assets/css/Portfolio.css';
+
+// Import images
 import HappyGardenerImage from '../assets/cardimages/HappyGardener.jpg';
 import FureverFriendsImage from '../assets/cardimages/FureverFriends.jpg';
 import WeatherDashboardImage from '../assets/cardimages/weatherdash.jpg';
@@ -11,8 +15,7 @@ import BookSearchEngineImage from '../assets/cardimages/BookSearchEngineImage.jp
 import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
 import NoteTakerImage from '../assets/cardimages/NoteTaker.jpg';
 
-
-
+// Project data
 const projects = [
   {
     title: 'The Happy Gardener',
@@ -77,12 +80,13 @@ const projects = [
     projectLink: 'https://huntrreed.github.io/Code-Quiz/',
     githubLink: 'https://github.com/huntrreed/Code-Quiz',
   },
-  // Note to me - can add more projects here
+  // Add more projects as needed
 ];
 
 const PortfolioPage = () => {
-    return (
-      <div className="portfolio-page">
+  return (
+    <div className="portfolio-page">
+      <div className="portfolio-content">
         {projects.map((project, index) => (
           <Card
             key={index}
@@ -90,11 +94,15 @@ const PortfolioPage = () => {
             className="project-card"
             cover={
               <div className="image-container">
-                <img src={project.imageUrl} alt={project.title} className="project-image"/>
+                <img src={project.imageUrl} alt={project.title} className="project-image" />
                 <div className="overlay">
-                  <a href={project.projectLink} className="project-title">{project.title}</a>
-                  <a href={project.githubLink}><GithubOutlined className="github-icon"/></a>
-                  <div className="project-subtitle">{project.subtitle}</div>
+                  <div className="overlay-content">
+                    <a href={project.projectLink} className="project-title">{project.title}</a>
+                    <div className="project-details">
+                      <span className="project-subtitle">{project.subtitle}</span>
+                      <a href={project.githubLink}><GithubOutlined className="github-icon" /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             }
@@ -102,7 +110,8 @@ const PortfolioPage = () => {
           </Card>
         ))}
       </div>
-    );
-  };
-  
-  export default PortfolioPage;
+    </div>
+  );
+};
+
+export default PortfolioPage;

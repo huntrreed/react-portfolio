@@ -1,0 +1,77 @@
+/* src/pages/Portfolio.css */
+.portfolio-page {
+    text-align: center;
+    color: white;
+    background: url('../image-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; /* Ensure this matches the header height */
+  }
+  
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .project-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .overlay-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .project-title {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .project-subtitle {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .github-icon {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
