@@ -6,14 +6,14 @@ import '../assets/css/Portfolio.css';
 
 // Import images
 import HappyGardenerImage from '../assets/cardimages/HappyGardener.jpg';
-import FureverFriendsImage from '../assets/cardimages/FureverFriends.jpg';
+import FureverFriendsImage from '../assets/cardimages/Paws.jpg';
 import WeatherDashboardImage from '../assets/cardimages/weatherdash.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
-import PasswordGeneratorImage from '../assets/cardimages/PasswordGenerator.jpg';
-import TaskMasterImage from '../assets/cardimages/TaskMasterImage.jpg';
-import BookSearchEngineImage from '../assets/cardimages/BookSearchEngineImage.jpg';
+import PasswordGeneratorImage from '../assets/cardimages/Passwords.jpg';
+import TaskMasterImage from '../assets/cardimages/TaskList.jpg';
+import BookSearchEngineImage from '../assets/cardimages/BookS.jpg';
 import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
-import NoteTakerImage from '../assets/cardimages/NoteTaker.jpg';
+import NoteTakerImage from '../assets/cardimages/Write.jpg';
 
 // Project data
 const projects = [

@@ -11,11 +11,11 @@ const Header = () => {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="smoothscroll" to="/about">
             About
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className="smoothscroll" to="/resume">
             Resume
