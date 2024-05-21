@@ -5,9 +5,9 @@ import { GithubOutlined } from '@ant-design/icons';
 import '../assets/css/Portfolio.css';
 
 // Import images
-import HappyGardenerImage from '../assets/cardimages/HappyGardener.jpg';
+import HappyGardenerImage from '../assets/cardimages/watering.jpg';
 import FureverFriendsImage from '../assets/cardimages/Paws.jpg';
-import WeatherDashboardImage from '../assets/cardimages/weatherdash.jpg';
+import WeatherDashboardImage from '../assets/cardimages/sunny.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
 import PasswordGeneratorImage from '../assets/cardimages/Passwords.jpg';
 import TaskMasterImage from '../assets/cardimages/TaskList.jpg';
