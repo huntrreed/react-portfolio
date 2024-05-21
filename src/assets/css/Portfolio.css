@@ -1,4 +1,20 @@
 /* src/pages/Portfolio.css */
+
+:root {
+    --white:#dcdfdd;
+    --green: #003f22;
+    --teal: #00a69c;
+    --orange: #b55f08;
+    --red: #8b1602;
+    --darkestred: #63250e;
+    --cloudorange: #ffdfb6;
+    --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
+    --greyblue: #70695e;
+
+    font-family: "kanit";
+  
+  }
+
 .portfolio-page {
     text-align: center;
     color: white;
@@ -7,7 +23,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 70px; /* Ensure this matches the header height */
+    padding-top: 90px; /* Ensure this matches the header height */
   }
   
   .portfolio-content {
@@ -16,19 +32,19 @@
     gap: 20px;
     padding: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
   }
   
   .project-card {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
     border: none;
     border-radius: 10px;
     overflow: hidden;
   }
   
   .card-header {
-    background: rgba(173, 216, 230, 0.6); /* Light blue background */
+    background: var(--greyblue); /* Light blue background */
     padding: 10px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -36,12 +52,12 @@
   }
   
   .project-title {
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
   }
   
   .project-title:hover {
-    color: #ff6347; /* Change color on hover */
+    color: #c7af97; /* Change color on hover */
   }
   
   .image-container {
@@ -62,12 +78,12 @@
   }
   
   .github-icon {
-    color: gray;
-    font-size: 2rem;
+    color: #56331e;
+    font-size: 4rem;
   }
   
   .github-icon:hover {
-    color: #ff6347; /* Change color on hover */
+    color: #c7af97; /* Change color on hover */
   }
   
   .project-subtitle-container {
@@ -80,7 +96,7 @@
   }
   
   .project-subtitle {
-    color: darkgreen;
+    color: #ac6d4b;
     font-size: 1.2rem;
     font-weight: 700;
   }
