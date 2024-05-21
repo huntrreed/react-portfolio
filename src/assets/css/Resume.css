@@ -1,4 +1,21 @@
 /* src/pages/Resume.css */
+
+
+:root {
+    --white:#dcdfdd;
+    --green: #003f22;
+    --teal: #00a69c;
+    --orange: #b55f08;
+    --red: #8b1602;
+    --darkestred: #63250e;
+    --cloudorange: #ffdfb6;
+    --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
+    --greyblue: #70695e;
+
+    font-family: "kanit";
+  
+  }
+
 .resume-page {
     text-align: center;
     color: white;
@@ -13,11 +30,11 @@
   }
   
   .resume-content {
-    background: #b55f08;
+    background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
     padding: 20px;
     border-radius: 10px;
     width: 75%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -28,7 +45,7 @@
   .resume-title {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: white;
+    color: #56331e;
   }
   
   .resume-iframe {
