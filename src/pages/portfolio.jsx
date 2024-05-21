@@ -88,25 +88,23 @@ const PortfolioPage = () => {
     <div className="portfolio-page">
       <div className="portfolio-content">
         {projects.map((project, index) => (
-          <Card
-            key={index}
-            hoverable
-            className="project-card"
-            cover={
-              <div className="image-container">
-                <img src={project.imageUrl} alt={project.title} className="project-image" />
-                <div className="overlay">
-                  <div className="overlay-content">
-                    <a href={project.projectLink} className="project-title">{project.title}</a>
-                    <div className="project-details">
-                      <span className="project-subtitle">{project.subtitle}</span>
-                      <a href={project.githubLink}><GithubOutlined className="github-icon" /></a>
-                    </div>
-                  </div>
+          <Card key={index} hoverable className="project-card">
+            <div className="card-header">
+              <a href={project.projectLink} className="project-title">
+                {project.title}
+              </a>
+            </div>
+            <div className="image-container">
+              <img src={project.imageUrl} alt={project.title} className="project-image" />
+              <div className="overlay">
+                <div className="project-details">
+                  <span className="project-subtitle">{project.subtitle}</span>
+                  <a href={project.githubLink}>
+                    <GithubOutlined className="github-icon" />
+                  </a>
                 </div>
               </div>
-            }
-          >
+            </div>
           </Card>
         ))}
       </div>
