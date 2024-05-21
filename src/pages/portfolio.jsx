@@ -96,13 +96,13 @@ const PortfolioPage = () => {
             </div>
             <div className="image-container">
               <img src={project.imageUrl} alt={project.title} className="project-image" />
-              <div className="overlay">
-                <div className="project-details">
-                  <span className="project-subtitle">{project.subtitle}</span>
-                  <a href={project.githubLink}>
-                    <GithubOutlined className="github-icon" />
-                  </a>
-                </div>
+              <div className="github-icon-container">
+                <a href={project.githubLink}>
+                  <GithubOutlined className="github-icon" />
+                </a>
+              </div>
+              <div className="project-subtitle-container">
+                <span className="project-subtitle">{project.subtitle}</span>
               </div>
             </div>
           </Card>

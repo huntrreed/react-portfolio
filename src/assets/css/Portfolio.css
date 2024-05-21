@@ -54,29 +54,11 @@
     object-fit: cover;
   }
   
-  .overlay {
+  .github-icon-container {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7); /* Light background for overlay */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .project-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .project-subtitle {
-    color: darkgreen;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-right: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .github-icon {
@@ -86,5 +68,20 @@
   
   .github-icon:hover {
     color: #ff6347; /* Change color on hover */
+  }
+  
+  .project-subtitle-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    padding: 5px 0;
+    text-align: center;
+  }
+  
+  .project-subtitle {
+    color: darkgreen;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   
