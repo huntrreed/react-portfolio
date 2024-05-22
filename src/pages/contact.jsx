@@ -40,6 +40,9 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
+      <div className="reach-out">
+        Reach out to me! I'm available for freelance work, collaborations, and more. Let's connect!
+      </div>
       <div className="form-container">
         <Form
           name="contact"

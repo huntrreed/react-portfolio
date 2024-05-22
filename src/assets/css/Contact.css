@@ -1,14 +1,13 @@
-/* src/pages/Contact.css */
 :root {
-    --white:#dcdfdd;
+    --white: #dcdfdd;
     --green: #003f22;
     --teal: #00a69c;
     --orange: #b55f08;
     --red: #8b1602;
     --darkestred: #63250e;
+    --cloudorange: #ffdfb6;
     font-family: "kanit";
-  
-  }
+}
 
 .contact-page {
     text-align: center;
@@ -20,54 +19,68 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 70px; /* Ensure this matches the header height */
-  }
-  
-  .form-container {
-    background: #d9ddd6;    ;
+    padding-top: 80px; /* Ensure this matches the header height */
+}
+
+.reach-out {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 75%;
+    max-width: 800px;
+    margin-bottom: 10px; /* Reduced space between the rectangle and the form */
+    font-size: 25px;
+    color: var(--darkestred);
+    font-weight: 600;
+}
+
+.form-container {
+    background: #d9ddd6;
     padding: 20px;
     border-radius: 10px;
     width: 75%;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto; /* Center the form container */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
     background: #70695e;
     width: 100%;
-  }
-  
-  .contact-form .ant-form-item {
+    padding: 10px; /* Added padding for better alignment */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the container */
+}
+
+.contact-form .ant-form-item {
     margin-bottom: 16px;
-  }
-  
-  .contact-form .ant-form-item-label > label {
-    color: #ffdfb6
-    ;
+}
+
+.contact-form .ant-form-item-label > label {
+    color: #ffdfb6;
     font-size: 20px;
     font-weight: 600;
-  }
-  
-  .contact-form .ant-input,
-  .contact-form .ant-input-textarea {
-    background: rgba(255, 255, 255, 0.8);
+}
+
+.contact-form .ant-input,
+.contact-form .ant-input-textarea {
+    background: white(255, 255, 255, 0.8);
     border: none;
     color: white;
-  }
-  
-  .contact-form .ant-btn-primary {
-    background-color: var(--orange);
+}
+
+.contact-form .ant-btn-primary {
+    background-color: #ee8b16;
     color: white;
     font-size: 22px;
+    font-weight: 600;
     height: 50px;
-    border-color: var(--orange);
-  }
-  
-  .contact-form .ant-btn-primary:hover {
+    border-color: #ee8b16;
+}
+
+.contact-form .ant-btn-primary:hover {
     background-color: var(--orange);
     border-color: var(--orange);
-  }
+}
