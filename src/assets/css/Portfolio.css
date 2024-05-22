@@ -8,7 +8,7 @@
     --red: #8b1602;
     --darkestred: #63250e;
     --cloudorange: #ffdfb6;
-    --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
+    --cloudorange-rgb: 255, 223, 182; /* RGB equivalent to above*/
     --greyblue: #70695e;
 
     font-family: "kanit";
@@ -23,7 +23,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 90px; /* Ensure this matches the header height */
+    padding-top: 90px; 
   }
   
   .portfolio-content {
@@ -37,14 +37,14 @@
   }
   
   .project-card {
-    background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
+    background: rgba(255, 223, 182, 0.7); 
     border: none;
     border-radius: 10px;
     overflow: hidden;
   }
   
   .card-header {
-    background: var(--greyblue); /* Light blue background */
+    background: var(--greyblue); 
     padding: 10px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -57,7 +57,7 @@
   }
   
   .project-title:hover {
-    color: #c7af97; /* Change color on hover */
+    color: #c7af97; 
   }
   
   .image-container {

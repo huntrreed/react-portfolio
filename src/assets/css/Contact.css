@@ -19,16 +19,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px; /* Ensure this matches the header height */
+    padding-top: 80px; 
 }
 
 .reach-out {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    background: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     width: 75%;
     max-width: 800px;
-    margin-bottom: 10px; /* Reduced space between the rectangle and the form */
+    margin-bottom: 10px; 
     font-size: 25px;
     color: var(--darkestred);
     font-weight: 600;
@@ -40,7 +40,7 @@
     border-radius: 10px;
     width: 75%;
     max-width: 600px;
-    margin: 0 auto; /* Center the form container */
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +50,8 @@
 .contact-form {
     background: #70695e;
     width: 100%;
-    padding: 10px; /* Added padding for better alignment */
-    box-sizing: border-box; /* Ensure padding doesn't overflow the container */
+    padding: 10px;
+    box-sizing: border-box; 
 }
 
 .contact-form .ant-form-item {
