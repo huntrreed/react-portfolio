@@ -1,37 +1,35 @@
 :root {
-    --white:#dcdfdd;
-    --green: #003f22;
-    --teal: #00a69c;
-    --orange: #b55f08;
-    --red: #8b1602;
-    --darkestred: #63250e;
-    font-family: "kanit";
-  
-  }
-
+  --white: #dcdfdd;
+  --green: #003f22;
+  --teal: #00a69c;
+  --orange: #b55f08;
+  --red: #8b1602;
+  --darkestred: #63250e;
+  --brownish: #5c3932;
+  font-family: "kanit";
+}
 
 #nav-wrap {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
-  
-  .nav li {
-    list-style: none;
-    margin: 0 15px;
-  }
-  
-  .nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-  }
-  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background: rgba(92, 57, 50, 0.5); 
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
