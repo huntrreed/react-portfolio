@@ -1,74 +1,76 @@
-/* src/pages/Home.css */
 :root {
-    --white:#dcdfdd;
-    --green: #003f22;
-    --teal: #00a69c;
-    --orange: #b55f08;
-    --red: #8b1602;
-    --darkestred: #63250e;
-    font-family: "kanit";
-  
-  }
-
+  --white: #dcdfdd;
+  --green: #003f22;
+  --teal: #00a69c;
+  --orange: #b55f08;
+  --red: #8b1602;
+  --darkestred: #63250e;
+  --customcolor: #5c3932;
+  font-family: "kanit";
+}
 
 .home {
-    text-align: center;
-    color: white;
-    background: url('../image-1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px; /* Ensure this matches the header height */
-  }
-  
-  .header-content {
-    display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-    width: 90%;
-    max-width: 1200px;
-    align-items: center;
-  }
-  
-  .text-content {
-    width: 75%;
-  }
-  
-  .image-content {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-content img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .header-content h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  
-  .header-content p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
-  
-  .social-links {
-    margin: 20px 0;
-  }
-  
-  .social-links a {
-    color: white;
-    margin: 0 10px;
-    font-size: 2rem;
-    text-decoration: none;
-  }
-  
+  text-align: center;
+  color: white;
+  background: url('../image-1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px; /* Ensure this matches the header height */
+}
+
+.header-content {
+  display: flex;
+  background: rgba(92, 57, 50, 0.5); /* Updated to use the custom color with 50% transparency */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.text-content {
+  width: 75%;
+}
+
+.image-content {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--orange); /* Change this to the desired hover color */
+}
