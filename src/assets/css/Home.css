@@ -19,12 +19,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 70px; /* Ensure this matches the header height */
+  padding-top: 70px; 
 }
 
 .header-content {
   display: flex;
-  background: rgba(92, 57, 50, 0.5); /* Updated to use the custom color with 50% transparency */
+  background: rgba(92, 57, 50, 0.5); 
   padding: 20px;
   border-radius: 10px;
   text-align: left;
@@ -72,5 +72,5 @@
 }
 
 .social-links a:hover {
-  color: var(--orange); /* Change this to the desired hover color */
+  color: var(--orange); 
 }
