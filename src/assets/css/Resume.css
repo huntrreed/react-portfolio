@@ -1,56 +1,50 @@
-/* src/pages/Resume.css */
-
-
 :root {
-    --white:#dcdfdd;
-    --green: #003f22;
-    --teal: #00a69c;
-    --orange: #b55f08;
-    --red: #8b1602;
-    --darkestred: #63250e;
-    --cloudorange: #ffdfb6;
-    --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
-    --greyblue: #70695e;
-
-    font-family: "kanit";
-  
-  }
+  --white: #dcdfdd;
+  --green: #003f22;
+  --teal: #00a69c;
+  --orange: #b55f08;
+  --red: #8b1602;
+  --darkestred: #63250e;
+  --cloudorange: #ffdfb6;
+  --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
+  --greyblue: #70695e;
+  font-family: "kanit";
+}
 
 .resume-page {
-    text-align: center;
-    color: white;
-    background: url('../image-1.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px; /* Ensure this matches the header height */
-  }
-  
-  .resume-content {
-    background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
-    padding: 20px;
-    border-radius: 10px;
-    width: 75%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .resume-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #56331e;
-  }
-  
-  .resume-iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-  }
-  
+  text-align: center;
+  color: white;
+  background: url('../image-1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px; /* Ensure this matches the header height */
+}
+
+.resume-content {
+  background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #56331e;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
