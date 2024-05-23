@@ -5,13 +5,13 @@ import { GithubOutlined } from '@ant-design/icons';
 import '../assets/css/Portfolio.css';
 
 // Import images
-import HappyGardenerImage from '../assets/cardimages/watering.jpg';
+import HappyGardenerImage from '../assets/cardimages/Watering.jpg';
 import FureverFriendsImage from '../assets/cardimages/Paws.jpg';
-import WeatherDashboardImage from '../assets/cardimages/sunny.jpg';
+import WeatherDashboardImage from '../assets/cardimages/Sunny.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
 import PasswordGeneratorImage from '../assets/cardimages/Passwords.jpg';
 import TaskMasterImage from '../assets/cardimages/TaskList.jpg';
-import BookSearchEngineImage from '../assets/cardimages/BookS.jpg';
+import BookSearchEngineImage from '../assets/cardimages/Books.jpg';
 import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
 import NoteTakerImage from '../assets/cardimages/Write.jpg';
 
