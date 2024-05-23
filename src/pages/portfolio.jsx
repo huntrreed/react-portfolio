@@ -10,7 +10,7 @@ import FureverFriendsImage from '../assets/cardimages/Paws.jpg';
 import WeatherDashboardImage from '../assets/cardimages/Sunny.jpg';
 import WorkdaySchedulerImage from '../assets/cardimages/WorkDayScheduler.jpg';
 import PasswordGeneratorImage from '../assets/cardimages/Passwords.jpg';
-import TaskMasterImage from '../assets/cardimages/TaskList.jpg';
+import TaskMasterImage from '../assets/cardimages/Tasklist.jpg';
 import BookSearchEngineImage from '../assets/cardimages/Books.jpg';
 import CodeQuizImage from '../assets/cardimages/CodeQuiz.jpg';
 import NoteTakerImage from '../assets/cardimages/Write.jpg';
