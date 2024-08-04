@@ -23,7 +23,7 @@ const Header = () => {
         </li>
         <li>
           <Link className="smoothscroll" to="/portfolio">
-            Portfolio
+            Work
           </Link>
         </li>
         <li>

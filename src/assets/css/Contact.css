@@ -1,86 +1,164 @@
 :root {
     --white: #dcdfdd;
-    --green: #003f22;
-    --teal: #00a69c;
-    --orange: #b55f08;
-    --red: #8b1602;
-    --darkestred: #63250e;
-    --cloudorange: #ffdfb6;
-    font-family: "kanit";
+    --pink: #BFA18F;
+    --yellow: #BF926B;
+    --orange: #BfB6AE;
+    --red: #73321A;
+    --darkestred: #401201;
+    font-family: "Kanit", sans-serif;
 }
 
 .contact-page {
-    text-align: center;
-    color: white;
-    background: url('../image-1.jpg') no-repeat center center fixed;
+    color: var(--white);
+    background: url('../SandStone.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px; 
+}
+
+.hero-container {
+    width: 100%;
+    background-color: var(--yellow);
+    height: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px; 
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.contact-header {
+    font-size: 48px;
+    color: var(--darkestred);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px; /* Add gap to separate the boxes */
 }
 
 .reach-out {
-    background: rgba(255, 255, 255, 0.8); 
+    flex: 1;
+    background: #73321A; 
     padding: 20px;
     border-radius: 10px;
-    width: 75%;
-    max-width: 800px;
-    margin-bottom: 10px; 
-    font-size: 25px;
-    color: var(--darkestred);
+    font-size: 24px;
+    color: white;
     font-weight: 600;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Updated shadow to match the submit button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .form-container {
-    background: #d9ddd6;
-    padding: 20px;
+    flex: 1;
+    background: var(--white);
+    padding: 30px;
     border-radius: 10px;
-    width: 75%;
-    max-width: 600px;
-    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
-    background: #70695e;
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box; 
 }
 
 .contact-form .ant-form-item {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .contact-form .ant-form-item-label > label {
-    color: #ffdfb6;
+    color: var(--darkestred);
     font-size: 20px;
     font-weight: 600;
 }
 
 .contact-form .ant-input,
 .contact-form .ant-input-textarea {
-    background: white(255, 255, 255, 0.8);
-    border: none;
-    color: white;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--pink);
+    color: var(--darkestred);
+}
+
+.contact-form .ant-input::placeholder,
+.contact-form .ant-input-textarea::placeholder {
+    color: var(--pink);
+}
+
+.contact-form .ant-input-textarea {
+    min-height: 200px; /* Increased height for the message box */
 }
 
 .contact-form .ant-btn-primary {
-    background-color: #ee8b16;
-    color: white;
-    font-size: 22px;
+    background-color: var(--yellow);
+    color: var(--darkestred);
+    font-size: 20px; /* Increased font size */
     font-weight: 600;
     height: 50px;
-    border-color: #ee8b16;
+    border-color: var(--yellow);
+    width: 100%;
+    border-radius: 25px;
 }
 
 .contact-form .ant-btn-primary:hover {
-    background-color: var(--orange);
-    border-color: var(--orange);
+    background-color: #73321A;
+    border-color: #73321A;
+    color: var(--white);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-header {
+        font-size: 48px;
+        color: var(--darkestred);
+        margin-top: 20px;
+    }
+
+    .reach-out, .form-container {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .reach-out {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .contact-form .ant-form-item-label > label {
+        font-size: 18px;
+    }
+
+    .contact-form .ant-btn-primary {
+        font-size: 18px;
+    }
+}
+
+/* Thank You Message Styling */
+.thank-you-message {
+    font-size: 24px;
+    color: var(--darkestred);
+    font-weight: 600;
+    text-align: center;
 }
