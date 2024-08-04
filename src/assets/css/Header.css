@@ -1,12 +1,11 @@
 :root {
   --white: #dcdfdd;
-  --green: #003f22;
-  --teal: #00a69c;
-  --orange: #b55f08;
-  --red: #8b1602;
-  --darkestred: #63250e;
-  --brownish: #5c3932;
-  font-family: "kanit";
+  --pink: #BFA18F;
+  --yellow: #BF926B;
+  --orange: #BfB6AE;
+  --red: #73321A;
+  --darkestred: #401201;
+  font-family: "Kanit", sans-serif;
 }
 
 #nav-wrap {
@@ -15,12 +14,17 @@
   top: 0;
   z-index: 100;
   background: rgba(92, 57, 50, 0.5); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  box-sizing: border-box;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  flex-grow: 1;
 }
 
 .nav li {
@@ -29,7 +33,86 @@
 }
 
 .nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
+  font-size: 34px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.nav li.current a,
+.nav li a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: var(--white);
   font-size: 28px;
+  margin-left: 20px;
+}
+
+.social-icons a:hover {
+  color: var(--yellow);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide nav by default on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: var(--darkestred);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .modal-content a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 15px 0;
+  }
+
+  .modal-content a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+  }
+
+  .modal-content .social-icons {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* Hide hamburger on desktop */
+  }
 }

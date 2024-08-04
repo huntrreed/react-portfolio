@@ -1,14 +1,11 @@
 :root {
   --white: #dcdfdd;
-  --green: #003f22;
-  --teal: #00a69c;
-  --orange: #b55f08;
-  --red: #8b1602;
-  --darkestred: #63250e;
-  --cloudorange: #ffdfb6;
-  --cloudorange-rgb: 255, 223, 182; /* RGB equivalent */
-  --greyblue: #70695e;
-  font-family: "kanit";
+  --pink: #BFA18F;
+  --yellow: #BF926B;
+  --orange: #BfB6AE;
+  --red: #73321A;
+  --darkestred: #401201;
+  font-family: "Kanit", sans-serif;
 }
 
 .resume-page {
@@ -16,25 +13,42 @@
   color: white;
   background: url('../image-1.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 70px; /* Adjusted padding to remove space */
+  width: 100%;
+}
+
+.hero-container {
+  width: 100%;
+  background-color: var(--darkestred);
+  height: 100px;
+  margin-top:21px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 70px; /* Ensure this matches the header height */
+}
+
+.resume-header {
+  font-size: 48px;
+  color: var(--white);
 }
 
 .resume-content {
-  background: rgba(255, 223, 182, 0.7); /* Use RGB values with transparency */
+  background: rgba(255, 223, 182, 0.9); /* Use RGB values with transparency */
   padding: 20px;
   border-radius: 10px;
-  width: 75%;
+  width: 80%;
   max-width: 1200px;
-  margin: auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 .resume-title {
@@ -43,8 +57,54 @@
   color: #56331e;
 }
 
+.resume-iframe-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: var(--white); /* Add background color to the container */
+  height: 700px; /* Increased height for the container */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
 .resume-iframe {
   width: 100%;
-  height: 500px;
+  height: 100%;
   border: none;
+  transform: scale(0.9); /* Adjusted scale to zoom */
+  transform-origin: top center; /* Ensure scaling from the top center */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .resume-page {
+    padding-top: 90px; /* Adjusted padding for mobile */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .hero-container {
+    height: 70px; /* Adjust height for mobile */
+    margin-top: -40px;
+  }
+
+  .resume-header {
+    font-size: 36px; /* Adjust font size for mobile */
+  }
+
+  .resume-content {
+    width: 90%; /* Adjust width for mobile */
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .resume-title {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .resume-iframe-container {
+    height: 500px; /* Adjust height for mobile */
+  }
+
+  .resume-iframe {
+    transform: scale(0.8); /* Adjusted scale to zoom for mobile */
+    width: 100%;
+  }
 }

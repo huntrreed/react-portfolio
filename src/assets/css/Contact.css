@@ -21,19 +21,20 @@
 }
 
 .hero-container {
-    width: 100%;
-    background-color: var(--yellow);
-    height: 100px;
+    width: 100vw; /* Set width to viewport width */
+    background-color: var(--darkestred);
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 63px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Match shadow with the rest of the boxes */
 }
 
 .contact-header {
     font-size: 48px;
-    color: var(--darkestred);
+    color: var(--white);
 }
 
 .contact-container {
@@ -47,10 +48,10 @@
 
 .reach-out {
     flex: 1;
-    background: #73321A; 
-    padding: 20px;
+    background: var(--yellow); 
+    padding: 70px 20px;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 34px;
     color: white;
     font-weight: 600;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Updated shadow to match the submit button */
@@ -128,7 +129,7 @@
 
     .contact-header {
         font-size: 48px;
-        color: var(--darkestred);
+        color: var(white);
         margin-top: 20px;
     }
 
