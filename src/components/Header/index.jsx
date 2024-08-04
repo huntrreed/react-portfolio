@@ -14,6 +14,9 @@ const Header = () => {
   return (
     <>
       <nav id="nav-wrap">
+        <div className="site-name">
+          Hunter Reed
+        </div>
         <div className="hamburger" onClick={toggleModal}>
           <FaBars />
         </div>

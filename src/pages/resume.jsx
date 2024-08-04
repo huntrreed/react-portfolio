@@ -5,8 +5,8 @@ import '../assets/css/Resume.css';
 const Resume = () => {
   return (
     <div className="resume-page">
-      <div className="hero-container">
-        <h1 className="resume-header">Resume</h1>
+      <div className="hero-container-resume">
+        <h1 className="resume-header">RESUME</h1>
       </div>
       <motion.div
         className="resume-content"

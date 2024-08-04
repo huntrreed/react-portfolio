@@ -11,7 +11,7 @@
 .resume-page {
   text-align: center;
   color: white;
-  background: url('../image-1.jpg') no-repeat center center fixed;
+  background: url('../SandStone.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -22,11 +22,11 @@
   width: 100%;
 }
 
-.hero-container {
+.hero-container-resume {
   width: 100%;
   background-color: var(--darkestred);
-  height: 100px;
-  margin-top:21px;
+  height: 150px;
+  margin-top: 21px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,13 +81,16 @@
     height: auto; /* Allow height to adjust based on content */
   }
 
-  .hero-container {
+  .hero-container-resume {
     height: 70px; /* Adjust height for mobile */
-    margin-top: -40px;
+    margin-top: -40px !important;
+    height: 100px;
+
   }
 
   .resume-header {
-    font-size: 36px; /* Adjust font size for mobile */
+    font-size: 46px !important; 
+    margin-top: 20px !important;/* Adjust font size for mobile */
   }
 
   .resume-content {

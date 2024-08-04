@@ -21,14 +21,14 @@
 }
 
 .hero-container {
-    width: 100vw; /* Set width to viewport width */
+    width: 100vw !important; /* Set width to viewport width */
     background-color: var(--darkestred);
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 63px;
+    margin-top: 50px !important;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Match shadow with the rest of the boxes */
 }
 
@@ -127,6 +127,18 @@
         width: 90%;
     }
 
+    .hero-container {
+        width: 100vw !important; /* Set width to viewport width */
+        background-color: var(--darkestred);
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 15px !important;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Match shadow with the rest of the boxes */
+    }
+
     .contact-header {
         font-size: 48px;
         color: var(white);
@@ -141,6 +153,7 @@
     .reach-out {
         margin-bottom: 20px;
         padding: 20px;
+        font-size: 20px;
     }
 
     .form-container {
