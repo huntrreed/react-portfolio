@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
+import { motion } from 'framer-motion';
 import '../assets/css/Portfolio.css';
 
 // Import images
@@ -83,29 +84,51 @@ const projects = [
   // Add more projects as needed
 ];
 
+const variants = {
+  hidden: { opacity: 0, y: -100 },
+  visible: { opacity: 1, y: 0 },
+  hover: { scale: 1.1 }
+};
+
 const PortfolioPage = () => {
   return (
     <div className="portfolio-page">
+      <div className="hero-container-work">
+        <h1 className="portfolio-header">Portfolio</h1>
+      </div>
       <div className="portfolio-content">
         {projects.map((project, index) => (
-          <Card key={index} hoverable className="project-card">
-            <div className="card-header">
-              <a href={project.projectLink} className="project-title">
-                {project.title}
-              </a>
-            </div>
-            <div className="image-container">
-              <img src={project.imageUrl} alt={project.title} className="project-image" />
-              <div className="github-icon-container">
-                <a href={project.githubLink}>
-                  <GithubOutlined className="github-icon" />
+          <motion.div
+            key={index}
+            initial="hidden"
+            animate="visible"
+            whileHover="hover"
+            variants={variants}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+          >
+            <Card hoverable className="project-card">
+              <div className="card-header">
+                <a href={project.projectLink} className="project-title">
+                  {project.title}
                 </a>
               </div>
-              <div className="project-subtitle-container">
-                <span className="project-subtitle">{project.subtitle}</span>
+              <div className="image-container">
+                <img src={project.imageUrl} alt={project.title} className="project-image" />
+                <motion.div
+                  className="github-icon-container"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                >
+                  <a href={project.githubLink}>
+                    <GithubOutlined className="github-icon" />
+                  </a>
+                </motion.div>
+                <div className="project-subtitle-container">
+                  <span className="project-subtitle">{project.subtitle}</span>
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </motion.div>
         ))}
       </div>
     </div>
