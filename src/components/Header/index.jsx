@@ -66,14 +66,6 @@ const Header = () => {
             <Link className="smoothscroll" to="/contact" onClick={toggleModal}>
               Contact
             </Link>
-            <div className="social-icons">
-              <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-              <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
-                <FaGithub />
-              </a>
-            </div>
           </div>
         </div>
       )}

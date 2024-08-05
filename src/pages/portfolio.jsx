@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import '../assets/css/Portfolio.css';
 
 // Import images
+import MansavageImage from '../assets/cardimages/Mansavage.png';
 import HappyGardenerImage from '../assets/cardimages/Watering.jpg';
 import FureverFriendsImage from '../assets/cardimages/Paws.jpg';
 import WeatherDashboardImage from '../assets/cardimages/Sunny.jpg';
@@ -18,6 +19,13 @@ import NoteTakerImage from '../assets/cardimages/Write.jpg';
 
 // Project data
 const projects = [
+  {
+    title: 'Mansavage Media',
+    subtitle: 'Photography Portfolio',
+    imageUrl: MansavageImage,
+    projectLink: 'https://www.mansavage.media/',
+    githubLink: 'https://github.com/huntrreed/Mansavage',
+  },
   {
     title: 'The Happy Gardener',
     subtitle: 'Interactive Front-End Application',
