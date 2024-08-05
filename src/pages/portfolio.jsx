@@ -94,7 +94,7 @@ const PortfolioPage = () => {
   return (
     <div className="portfolio-page">
       <div className="hero-container-work">
-        <h1 className="portfolio-header">Portfolio</h1>
+        <h1 className="portfolio-header">PORTFOLIO</h1>
       </div>
       <div className="portfolio-content">
         {projects.map((project, index) => (

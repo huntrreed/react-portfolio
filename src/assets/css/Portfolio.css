@@ -1,15 +1,11 @@
 :root {
-  --white:#dcdfdd;
-  --green: #003f22;
-  --teal: #00a69c;
-  --orange: #b55f08;
-  --red: #8b1602;
-  --darkestred: #63250e;
-  --cloudorange: #ffdfb6;
-  --cloudorange-rgb: 255, 223, 182; /* RGB equivalent to above*/
-  --greyblue: #70695e;
-
-  font-family: "kanit";
+  --white: #dcdfdd;
+  --pink: #BFA18F;
+  --yellow: #BF926B;
+  --orange: #9f6441;
+  --red: #73321A;
+  --darkestred: #401201;
+  font-family: "Kanit", sans-serif;
 }
 
 .portfolio-page {
@@ -20,11 +16,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 90px; 
+  padding-top: 90px;
+  align-items: center;
+  width: 100vw; /* Ensure no gap on the sides */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero-container-work {
-  width: 100%;
+  width: 100vw !important; /* Set width to viewport width */
   background-color: var(--darkestred);
   height: 100px;
   display: flex;
@@ -49,7 +48,7 @@
 }
 
 .project-card {
-  background: rgba(255, 223, 182, 0.7); 
+  background: var(--darkestred);
   border: none;
   border-radius: 10px;
   overflow: hidden;
@@ -57,7 +56,7 @@
 }
 
 .card-header {
-  background: var(--greyblue); 
+  background: #9f6441;
   padding: 10px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -70,7 +69,7 @@
 }
 
 .project-title:hover {
-  color: #c7af97; 
+  color: #c7af97;
 }
 
 .image-container {
@@ -88,7 +87,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
 }
 
 .github-icon {
@@ -107,11 +105,65 @@
 }
 
 .project-subtitle {
-  color: #ac6d4b;
-  font-size: 1.2rem;
+  color: var(--darkestred);
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .project-card:hover .github-icon-container {
   opacity: 1;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .portfolio-page {
+    padding-top: 70px; /* Adjust padding for mobile */
+    width: 100vw; /* Ensure no gap on the sides */
+  }
+
+  .hero-container-work {
+    height: 100px;
+    width: 100vw !important;
+    margin-top: -20px !important; /* Adjust height for mobile */
+  }
+
+  .portfolio-header {
+    font-size: 46px; /* Adjust font size for mobile */
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 15px; /* Adjust gap for mobile */
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  .project-card {
+    padding: 10px;
+    width: 95vw; /* Adjust width for mobile and ensure no gap */
+  }
+
+  .card-header {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+    padding: 8px; /* Adjust padding for mobile */
+  }
+
+  .project-title {
+    font-size: 1.2rem; /* Adjust font size for mobile */
+  }
+
+  .project-image {
+    height: 150px; /* Adjust image height for mobile */
+  }
+
+  .github-icon {
+    font-size: 3rem; /* Adjust icon size for mobile */
+  }
+
+  .project-subtitle {
+    font-size: 1rem; /* Adjust subtitle size for mobile */
+  }
+
+  .github-icon-container {
+    opacity: 1 !important; /* Always show GitHub icon on mobile */
+  }
 }
